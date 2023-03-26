@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+/*wrap*/
+#m_contents{
+	width: 80%;
+	height : 450px;
+	margin: 10% auto;
+	position: relative;
+
+}
+#m_contents > h1 {
+	position : absolute;
+	left : 5%;
+	top : 3%;
+	font-size:32px;
+}
+
+#match_con {
+	width: 90%;
+	height : 300px;
+	position : absolute;
+	top: 15%;
+	right:5%;
+	background-color : #e6e6e6;
+	border-radius: 10px;
+	overflow:"auto";
+	
+}
+.match_in {
+	width : 100%;
+}
+
+.match_in tr {
+	line-height: 150px;
+	text-align : center;
+	font-size:16px;
+	font-weight: bold;
+}
+.match_in input {
+	width: 220px;
+	height : 50px;
+}
+
+.match_select {
+	width: 220px;
+	height : 50px;
+}
+.match {
+	width :150px;
+	height: 50px;
+	font-size:px;
+	font-weight: bold;
+	position : absolute;
+	right: 5%;
+	bottom : 4%;
+	border:none;
+	background-color : #1b3fa9;
+	color: #ffffff;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.match:hover {
+	border:1px solid #1b3fa9;
+	background-color : #ffffff;
+	color: #1b3fa9;	
+}

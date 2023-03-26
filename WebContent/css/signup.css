@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+
+*{margin:0; padding:0; list-style:none; text-decoration:none; color:black}
+
+body h1{font-size:60px; margin:30px; text-align:center;}
+
+
+#wrap{width:500px; height:600px; margin:auto; background-color:#eaeaea; border-radius:10px;}
+
+#top_wrap {font-weight:normal; margin:0px 30px 10px 30px; padding-top:20px}
+.h2_st{font-size:30px;}
+#h2{font-size:20px;}
+#pp{margin:10px 30px 30px 0; font-size:20px;}
+#u_id, #pass, #pass2, #first_name, #last_name{border:none; border-bottom:1px solid black; width:90%; height:30px;}
+
+#cen_wrap p{margin-left:30px;}
+#cen2_wrap p{margin-left:30px}
+#cen2_wrap p label{display:block; margin-top:20px;}
+input{background-color:#eaeaea;}
+
+#cen3_wrap{margin-top:30px}
+#cen3_wrap p:nth-of-type(3){margin-top:23px}
+
+.low_wrap{margin-top:30px; width:152px;float:left; margin-left:50px;}
+.low_wrap2{margin-top:30px; width:152px;float:left; margin-left:50px;}
+
+#day{ width:100px; height:30px; margin-left:30px; text-align: center; font-size:15px;}
+#date{width:100px; height:20px; margin-left:30px;}
+#answer{width:100px; height:30px; text-align: center; font-size:15px;}
+#date2{width:100px; height:25px; margin-left:30px; text-align:center; margin-bottom:45px;}
+
+.next {font-size:20px;  width:180px; height:42px; border-radius:10px; border:none; background-color:lightskyblue; color:white; float:left; margin-left:20px;cursor:pointer; text-align: center;}
+
+.next:hover{background-color:blue;}
+
+.back{font-size:20px;  width:180px; height:35px; border-radius:10px; border:none; background-color:gray; float:left; margin-left:60px;cursor:pointer; text-align: center; padding-top:7px}

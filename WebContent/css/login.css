@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+*{margin:0; padding:0; list-style:none; text-decoration:none; color:black}
+body{background-color:#eaeaea;}
+
+#logo_wrap{height:100%; width:100%;text-align:center;}
+#logo_wrap p{text-align:center;font-size:60px; font-weight:bold;}
+
+
+#min{margin-top:50px}
+
+#id_pw {text-align: center; width:450px; height:300px; margin:auto; background-color:white; border-radius:20px;border:none;}
+#u_id{margin-top:80px; border-radius:5px; width:200px; height:40px;}
+#pwd{margin-top:10px; border-radius:5px; width:200px; height:40px;}
+.bottom_login{margin-top:40px; width:200px; height:40px; border-radius:50px; background-color:lightskyblue;cursor:pointer}
+#bottom2{text-align:center; margin-top:20px;}
+
+
+
+
+
+

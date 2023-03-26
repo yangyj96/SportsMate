@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>회원가입</title>
+  <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+  <h1><a><img src="../images/logo.PNG" alt="메인로고" width="200"></a></h1>
+  <div id="wrap">
+    <div id="top_wrap">
+      <p id="h2"><strong class="h2_st">Sports Mate</strong> 계정 만들기</p>
+      <p id="pp">계정으로 사용할 이메일 주소를 입력하세요.</p>
+    </div>
+    <div id="cen_wrap">
+      <form action="member3" method="post" id="join">
+        <p>이메일</p>
+        <p><label for="u_id"></label><input type="email" id="u_id" name="id" required> </p>
+        <div id="cen2_wrap">
+          <p><label for="pass"></label><input type="password" id="pass" name="pwd" required placeholder="비밀번호"></p>
+          <p><label for="pass2"></label><input type="password" id="pass2" required placeholder="비밀번호 확인"></p>
+        </div>
+        <div id="cen3_wrap">
+          <p>이름</p>
+          <p><label for="last_name"></label><input type="text" id="last_name" name="name" required> </p>
+        </div>
+        <div class="low_wrap">
+          <p id="day">생 년 월 일</p>
+          <input type="date" id="date" name="day" required>
+        </div>
+        <div class="low_wrap2">
+          <p id="answer">관심종목</p>
+          <select name="interest" id="date2">
+            <option value="축구">축구</option>
+            <option value="농구">농구</option>
+            <option value="야구">야구</option>
+            <option value="기타">기타</option>
+          </select>
+        </div>
+        <input type="hidden" name="command" value="addMember">
+      </form>
+    </div>
+    <div id="buttom">
+      <p>
+        <a class="back" href="약관동의.html" title="back">뒤로</a>
+        <button class="next" title="submit" id="submitBtn" onclick="submitForm()">동의</button>
+      </p>
+    </div>
+  </div>
+  <script>
+  function submitForm() {
+	  const uId = document.getElementById('u_id');
+	  const pass = document.getElementById('pass');
+	  const pass2 = document.getElementById('pass2');
+
+	  // 이메일 유효성 검사
+	  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+	  if (!emailRegex.test(uId.value)) {
+	    alert('이메일 형식이 올바르지 않습니다.');
+	    uId.focus();
+	    return false;
+	  }
+
+	  // 비밀번호 일치 여부 검사
+	  if (pass.value !== pass2.value) {
+	    alert('비밀번호와 비밀번호 확인이 일치하지 않습니다.');
+	    pass2.focus();
+	    return false;
+	  }
+
+	  // 비밀번호 유효성 검사
+	  const passRegex = /^[a-zA-Z0-9!@#$%^&*()?_~]{6,16}$/;
+	  if (!passRegex.test(pass.value)) {
+	    alert('비밀번호는 영문 대/소문자, 숫자, 특수문자를 혼합하여 6~16자 이내로 입력해주세요.');
+	    pass.focus();
+	    return false;
+	  }
+
+	  document.getElementById('join').submit();
+	}
+  </script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+@charset "utf-8";
+
+body {
+    font-family: 'NanumBarunGothic', serif;
+    width: 100%;
+}
+h2{
+    font-size: 50px;
+}
+#mypage_wrap {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.mypage_main_wrap {
+    background-color: #FFFFFF;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
+    margin: 30px auto;
+    padding: 30px 40px;
+    text-align: center;
+}
+
+.status {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+.status img {
+    margin-right: 20px;
+}
+
+.status span {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+    color:#333;
+}
+
+.match_button {
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    top: 30px;
+    right: 200px;
+    font-size: 20px;
+    border-radius: 20px;
+    border-color: transparent;
+    background-color: black;
+    color: white;
+}
+
+#match_list {
+    margin-top: 60px;
+    margin-bottom: 300px;
+}
+
+.match_on {
+    border: 1px solid transparent;
+    float: left;
+    width: 33%;
+}
+
+#match_list h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#match_list table {
+    border-collapse: collapse; /* 테두리 합치기 */
+    border-spacing: 0; /* 셀 사이 간격 없애기 */
+    width: 100%;
+}
+
+#match_list th {
+    background-color: gray; /* th 배경색 지정 */
+    color: #fff; /* 글자색 지정 */
+    height: 40px;
+    line-height: 40px;
+}
+
+#match_list td {
+    background-color: #fff; /* td 배경색 지정 */
+    color: #333; /* 글자색 지정 */
+    height: 30px;
+    line-height: 30px;
+    text-align: center; /* 가운데 정렬 */
+    border: 1px solid #ccc; /* 테두리 지정 */
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.board_write {
+    border: 1px solid black;
+    display: block;
+    width: 70px;
+    text-align: center;
+    padding: 5px 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 410px;
+}
+.board_write:hover{
+    background: black;
+    color:white;
+}
+.footer{
+    height: 150px;
+    background-color: #666;
+    text-align: center;
+    color:#fff;
+    padding-top:5%;
+    clear:both;
+}
+
+.footer h2{
+    color:#fff;
+    font-size:24px;
+    margin-top:-2%;
+}
+
+.name{
+    display: inline-block;
+    border:1px solid #fff;
+    border-radius:20px;
+    color:#fff;
+    width: 5%;
+    height:20%;
+    margin:1%;
+    line-height:2em;
+}
+.head{
+    width:100%;
+    position: relative;
+}
+
+.head h1{
+    width:80%;
+    margin:0 auto;
+    text-align:center;
+}
+
+.u_info{
+    font-size:1.3em;
+    position:absolute;
+    top:60%;
+    right:10%;
+}
+
+.u_name{
+	color:blue;
+	font-size:1.5em;
+}
