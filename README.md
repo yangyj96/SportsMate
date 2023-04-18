@@ -1,6 +1,13 @@
-# SportsMate
+## SportsMate
 
 JSP와 Servlet을 활용한 스포츠 매치 사이트 프로젝트
+
+## 개발 환경
+ - Java 11
+ - Server : Apache Tomcat 9.0
+ - Framework : JSP, Servlet
+ - Database: MySQL
+ - IDE : Eclipse
 
 ### 메인(로그인전)
 
